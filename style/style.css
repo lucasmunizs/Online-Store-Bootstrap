@@ -6,6 +6,10 @@ body {
     height: 4000px;
 }
 
+footer {
+    background-color: var(--marrom-claro);
+}
+
 input[type="checkbox"] {
         border: 2px solid var(--marrom-claro);
         box-shadow: none;
@@ -18,6 +22,10 @@ input[type="checkbox"] {
         box-shadow: none;
         outline: none;
       }
+
+.input-range::-webkit-slider-thumb {
+  background-color: var(--marrom-claro);
+}
 
       .banner-1{
         background-image: url(../assets/banner-1.png);
@@ -59,8 +67,20 @@ input[type="checkbox"] {
 
       .botao-padrao {
         background-color: var(--marrom-claro);
+        color: black;
       }
 
       .botao-padrao:hover {
         background-color: var(--marrom-escuro);
+      }
+
+      [data-bs-theme="dark"] {
+        color: white;
+        .nav-link, .card-body, .offcanvas, .accordion, .btn, .form-select {
+          --bs-nav-link-color: white;
+          --bs-card-color: white;
+          --bs-offcanvas-color: white;
+          --bs-accordion-color: white;
+          --bs-body-color: white;
+        }
       }
